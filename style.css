@@ -1,0 +1,266 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Baggrundens tekstur og baggrundsfarve*/
+body {
+  background-color: #e3e8d5;
+}
+
+.tekstur{
+padding-right: 80px;
+}
+
+/*header med mobmenu, logo og link til Instagram*/
+.mobmenu{
+padding-left: 10%;
+margin-top: 10%;
+}
+
+.logo{
+  padding-left: 38%;
+margin-top: -13%;
+}
+
+.insta{
+float: right;
+display: inline-block;
+position: relative;
+z-index: 1;
+cursor: pointer;
+padding-right: 13%;
+margin-top: -11.5%;
+}
+
+.streg{
+  position: absolute;
+  margin-top: -130px;
+  z-index: -1;
+}
+
+/*dropdown styles her*/
+nav ul li{
+  list-style: none;
+  position: relative;
+  width: 5%;
+}
+
+nav ul li a{
+  display: block;
+  color: black;
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+  font-size: 19px;
+  padding: 24px 0px 60px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav ul li ul{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  left: -11%;
+  top: 49%;
+
+}
+
+nav ul li:hover ul{
+  display: block;
+}
+
+nav ul li ul li{
+  width: 400px;
+}
+
+nav ul li ul li a:hover{
+ text-decoration: underline;
+}
+
+
+
+/*Knap på midten af forsiden*/
+.button1 {
+  background-color: #c6d0ab;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 42%;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: Courier New;
+  cursor: pointer;
+}
+
+/* Responsive layout - Mobilenhed*/
+  @media only screen and (max-width: 600px){
+
+        .logo{
+          display: none;
+        }
+
+        .logomob{
+          display: block;
+          margin-left: 30%;
+          margin-top: -35%;
+          position: absolute;
+          z-index: -1;
+        }
+
+        .streg{
+          display: none;
+        }
+
+        .mobmenu{
+          display: none;
+        }
+
+        .insta{
+          display: none;
+        }
+
+        .tekstur{
+          display: none;
+        }
+
+        .button1mob{
+          display: block;
+          background-color: #c6d0ab;
+          margin: 0;
+          top: 40%;
+          left: 28%;
+          border-radius: 5px;
+          border: none;
+          color: black;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          font-family: Courier New;
+          cursor: pointer;
+          position: absolute;
+          z-index: -1;
+        }
+
+        .button1{
+          display: none;
+        }
+
+        .mobmenu{
+          display: none;
+        }
+
+        .mobmenumobil{
+          display: block;
+          padding-left: 1%;
+          margin-top: 5%;
+        }
+
+        nav ul li{
+          list-style: none;
+          position: relative;
+          width: 5%;
+          p
+        }
+
+        nav ul li a{
+          display: block;
+          color: black;
+          font-family: nttld, sans-serif;
+          font-weight: 100;
+          font-size: 19px;
+          padding: 24px 0px 60px 30px;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+
+        nav ul li ul{
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          left: -11%;
+          top: 49%;
+
+        }
+
+        nav ul li:hover ul{
+          display: block;
+        }
+
+        nav ul li ul li{
+          width: 410px;
+        }
+
+        nav ul li ul li a:hover{
+         text-decoration: underline;
+        }
+
+        .instamob{
+          display: block;
+          float: right;
+          padding-right: 7%;
+          margin-top: -25.5%;
+        }
+
+        .tekstur{
+          display: none;
+        }
+
+        .teksturmobil{
+          display: block;
+          position: absolute;
+          z-index: -1;
+        }
+
+      }
+
+      @media only screen and (min-width: 992px) {
+        .logo{
+          display: block;
+        }
+
+        .logomob{
+          display: none;
+          margin-left: 30%;
+        }
+
+        .streg{
+          display: block;
+        }
+
+        .mobmenu{
+          display: block;
+        }
+
+        .button1{
+          display: block;
+        }
+
+        .button1mob{
+          display: none;
+        }
+
+        .mobmenumobil{
+          display: none;
+        }
+
+        .instamob{
+          display: none;
+        }
+
+        .teksturmobil{
+          display: none;
+        }
+
+        .tekstur{
+          display: block;
+        }
+      }

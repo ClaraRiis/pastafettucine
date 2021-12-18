@@ -1,0 +1,291 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Baggrundens tekstur og baggrundsfarve*/
+body {
+  background-image: url(../images/grøntekstur.png);
+  background-size: cover;
+  background-color: #e3e8d5;
+}
+
+.tekstur{
+  position: absolute;
+  z-index: -1;
+  margin-top: 340px;
+  padding-bottom: 110px;
+  opacity: 0.5;
+}
+
+/*header med mobmenu, logo og link til Instagram*/
+.mobmenu{
+padding-left: 10%;
+margin-top: 10%;
+}
+
+.logo{
+  padding-left: 38%;
+  margin-top: -13%;
+}
+
+.insta{
+float: right;
+padding-right: 13%;
+margin-top: -11.5%;
+}
+
+.streg{
+  position: absolute;
+  margin-top: -130px;
+  z-index: -1;
+}
+
+/*dropdown styles her*/
+nav ul li{
+  list-style: none;
+  position: relative;
+  width: 5%;
+}
+
+nav ul li a{
+  display: block;
+  color: black;
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+  font-size: 19px;
+  padding: 24px 0px 60px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+nav ul li ul{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  left: -11%;
+  top: 49%;
+}
+
+nav ul li:hover ul{
+  display: block;
+}
+
+nav ul li ul li{
+  width: 400px;
+}
+
+nav ul li ul li a:hover{
+ text-decoration: underline;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: #abb09e;
+  justify-content: space-between;
+  height: 500px;
+  margin-top: -103px;
+  width: 100%;
+  z-index: -1;
+}
+
+/*--Tekst på siden styles så der opnåes det korrekte layout--*/
+.omos{
+font-size: 50px;
+text-align: center;
+margin-top: 120px;
+color: white;
+text-shadow: 0.5px 0.5px grey;
+font-family: nttld, sans-serif;
+font-weight: 100;
+}
+
+.bæredygtigøko{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 320px;
+  margin-bottom: 40px;
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+}
+
+.bæredygtigøkotekst{
+  font-size: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  line-height: 40px;
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+}
+
+/* Responsive layout - Mobilenhed*/
+  @media only screen and (max-width: 600px){
+    .mobmenu{
+      display: none;
+    }
+
+    .mobmenumobil{
+      display: block;
+      padding-left: 1%;
+      margin-top: 5%;
+    }
+
+    nav ul li{
+      list-style: none;
+      position: relative;
+      width: 5%;
+      p
+    }
+
+    nav ul li a{
+      display: block;
+      color: black;
+      font-family: nttld, sans-serif;
+      font-weight: 100;
+      font-size: 19px;
+      padding: 24px 0px 60px 30px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    nav ul li ul{
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      left: -11%;
+      top: 49%;
+
+    }
+
+    nav ul li:hover ul{
+      display: block;
+    }
+
+    nav ul li ul li{
+      width: 410px;
+    }
+
+    nav ul li ul li a:hover{
+     text-decoration: underline;
+    }
+
+    .logo{
+      display: none;
+    }
+
+    .logomob{
+      display: block;
+      margin-left: 30%;
+      margin-top: -35%;
+      margin-bottom: 100px;
+    }
+
+    .insta{
+      display: none;
+    }
+    .instamob{
+      display: block;
+      float: right;
+      padding-right: 10%;
+      margin-top: -51.5%;
+    }
+
+    .tekstur{
+      display: none;
+    }
+
+    .teksturmobil{
+      display: block;
+      position: absolute;
+      margin-top: 100px;
+      z-index: -1;
+    }
+
+    .streg{
+      display: none;
+    }
+
+    .flex-container{
+      display: none;
+}
+
+    .flex-containermob{
+      display: block;
+      margin-top: -90px;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .omos{
+      display: none;
+    }
+
+    .omosmob{
+      display: block;
+      font-size: 25px;
+      text-align: center;
+      margin-top: px;
+      color: white;
+      text-shadow: 0.5px 0.5px grey;
+      font-family: nttld, sans-serif;
+      font-weight: 100;
+    }
+
+    .bæredygtigøko{
+      font-size: 25px;
+      margin-top: 110px;
+    }
+
+    .bæredygtigøkotekst{
+      margin-left: 20px;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+  }
+
+
+  @media only screen and (min-width: 992px) {
+    .mobmenu{
+      display: block;
+    }
+
+    .mobmenumobil{
+      display: none;
+    }
+
+    .logo{
+      display: block;
+    }
+
+    .logomob{
+      display: none;
+
+    }
+
+    .instamob{
+      display: none;
+    }
+
+    .teksturmobil{
+      display: none;
+    }
+
+    .tekstur{
+      display: block;
+    }
+    .flex-container{
+      display: block;
+    }
+
+    .flex-containermob{
+      display: none;
+    }
+
+    .omosmob{
+      display: none;
+    }
+  }

@@ -1,0 +1,310 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Baggrundens tekstur og baggrundsfarve*/
+body {
+  background-image: url(../images/grøntekstur.png);
+  background-size: cover;
+  background-color: #e3e8d5;
+}
+
+.tekstur{
+  position: absolute;
+  z-index: -1;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*header med mobmenu, logo og link til Instagram*/
+.mobmenu{
+padding-left: 10%;
+margin-top: 10%;
+}
+
+.logo{
+  padding-left: 38%;
+  margin-top: -13%;
+}
+
+.insta{
+float: right;
+padding-right: 13%;
+margin-top: -11.5%;
+}
+
+.streg{
+  position: absolute;
+  margin-top: -130px;
+  z-index: -1;
+}
+
+/*dropdown styles her*/
+nav ul li{
+  list-style: none;
+  position: relative;
+  width: 5%;
+}
+
+nav ul li a{
+    display: block;
+    color: black;
+    font-family: nttld, sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+    padding: 24px 0px 60px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+  }
+
+nav ul li ul{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  left: -11%;
+  top: 49%;
+}
+
+nav ul li:hover ul{
+  display: block;
+}
+
+nav ul li ul li{
+  width: 400px;
+}
+
+nav ul li ul li a:hover{
+ text-decoration: underline;
+}
+
+/*box med oplysninger styles */
+.Kontaktbox{
+  float: left;
+margin-left: 400px;
+  margin-top: 30px;
+  border: 2px solid #c4c9b6;
+  border-radius: 8px;
+  line-height: 50px;
+  background-color: #e3e8d5;
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+}
+
+ul li{
+  list-style-type: none;
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+margin-left: 30px;
+margin-right: 30px;
+font-size: 20px;
+}
+
+.kontaktinfo{
+  ont-family: nttld, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  margin-left: 370px;
+  margin-top: 10px;
+}
+p{
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.Kontaktbox1{
+  float: right;
+margin-right: 300px;
+  margin-top: 25px;
+  border: 2px solid #c4c9b6;
+  border-radius: 8px;
+  line-height: 50px;
+  background-color: #e3e8d5;
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+}
+
+ul li{
+  list-style-type: none;
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+margin-left: 30px;
+margin-right: 30px;
+font-size: 20px;
+}
+
+.kontaktos{
+  float: right;
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  padding-right: 500px;
+  margin-top: -30px;
+}
+p{
+  font-family: nttld, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Responsive layout - Mobilenhed*/
+  @media only screen and (max-width: 600px){
+
+        .logo{
+          display: none;
+        }
+
+        .logomob{
+            display: block;
+            margin-left: 30%;
+            margin-top: -35%;
+            margin-bottom: 30px;
+          }
+
+        .streg{
+          display: none;
+        }
+
+        .mobmenu{
+          display: none;
+        }
+
+        .insta{
+          display: none;
+        }
+
+        .mobmenumobil{
+          display: block;
+          margin-top: 5%;
+          margin-left: -20px;
+        }
+
+        nav ul li{
+          list-style: none;
+          position: relative;
+          width: 5%;
+          p
+        }
+
+        nav ul li a{
+          display: block;
+          color: black;
+          font-family: nttld, sans-serif;
+          font-weight: 100;
+          font-size: 19px;
+          padding: 24px 0px 60px 30px;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+
+        nav ul li ul{
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          left: -11%;
+          top: 49%;
+
+        }
+
+        nav ul li:hover ul{
+          display: block;
+        }
+
+        nav ul li ul li{
+          width: 410px;
+        }
+
+        nav ul li ul li a:hover{
+         text-decoration: underline;
+        }
+
+        .instamob{
+          display: block;
+          float: right;
+          padding-right: 10%;
+          margin-top: -33%;
+        }
+
+        .tekstur{
+          display: none;
+        }
+
+        .teksturmobil{
+          display: block;
+          position: absolute;
+          z-index: -1;
+        }
+
+        .Kontaktbox{
+          margin-left: 55px;
+          margin-top: 30px;
+        }
+
+        .kontaktinfo{
+          margin-left: 105px;
+          margin-top: 30px;
+
+        }
+        .hovedkontor{
+          display: none;
+        }
+
+        .kontaktos{
+          margin-left: 105px;
+          margin-top: 30px;
+        }
+
+        .Kontaktbox1{
+          float: left;
+          margin-left: 75px;
+          margin-top: 30px;
+        }
+
+        .kontaktos{
+          float: left;
+          margin-left: 65px;
+          margin-top: 30px;
+          padding-right: 10px;
+        }
+      }
+
+        @media only screen and (min-width: 992px) {
+          .logo{
+            display: block;
+          }
+
+          .logomob{
+            display: none;
+            margin-left: 30%;
+          }
+
+          .streg{
+            display: block;
+          }
+
+          .mobmenu{
+            display: block;
+          }
+
+          .mobmenumobil{
+            display: none;
+          }
+
+          .instamob{
+            display: none;
+          }
+
+          .teksturmobil{
+            display: none;
+          }
+
+          .tekstur{
+            display: block;
+          }
+        }
